@@ -32,7 +32,7 @@ export default function Calculator() {
         <Box margin={"auto"} borderRadius={"5px"} mt={"20px"} w={"22%"} bg={'RGBA(0, 0, 0, 0.16)'}>
             <Text fontSize={"22PX"} fontWeight={"600"} fontStyle={"initial"}>CALCULATOR</Text>
             <br />
-          { IsOpen && <Box bg={"RGBA(0, 0, 0, 0.24)"} borderRadius={"5px"} fontSize={"20px"} fontWeight={"600"} height={"50px"} w={"95%"} m={"auto"} textAlign={"right"} overflow={"auto"}>
+          { IsOpen && <Box bg={"RGBA(0, 0, 0, 0.24)"} borderRadius={"5px"} fontSize={"20px"} fontWeight={"600"} height={"50px"} m={"auto"} textAlign={"right"} overflow={"auto"}>
                 {History}
             </Box>}
             <Box bg={"RGBA(0, 0, 0, 0.24)"} borderRadius={"5px"} fontSize={"20px"} fontWeight={"600"} height={"50px"}padding={"10px"} m={"auto"} textAlign={"right"}>
@@ -43,7 +43,7 @@ export default function Calculator() {
                 <div onClick={HandelClear}><Buttons BGcolor="RGBA(0, 0, 0, 0.24)" Color="black" Text="C" /></div>
                 <div onClick={HandelHistory}><Buttons BGcolor="RGBA(0, 0, 0, 0.24)" Color="black" Text="H" /></div>
                 <div onClick={()=>HandelClicked("%")}> <Buttons BGcolor="RGBA(0, 0, 0, 0.24)" Color="black" Text="%" /></div>
-                <div onClick={()=>HandelClicked("%")}> <Buttons BGcolor="#ECC94B" Color="white" Text="÷" /></div>
+                <div onClick={()=>HandelClicked("/")}> <Buttons BGcolor="#ECC94B" Color="white" Text="÷" /></div>
             </Flex>
             <br />
             <Flex justifyContent={"space-around"}>
